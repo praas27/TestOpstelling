@@ -1,0 +1,36 @@
+﻿while (1 > 0)
+            {
+                byte[] data1 = new byte[8] { 0, 0, 0, 0, 33, 1, 0, 11 };
+                byte[] data2 = new byte[8] { 128, 110, 129, 103, 128, 103, 248, 168 };
+                byte[] data3 = new byte[8] { 1, 8, 0, 2, 0, 0, 0, 0 };
+                byte[] data4 = new byte[8] { 0, 0, 0, 160, 0, 0, 0, 0 };
+                byte[] data5 = new byte[8] { 18, 0, 0, 0, 19, 0, 0, 35 };
+                byte[] data6 = new byte[8] { 255, 255, 255, 255, 255, 0, 246, 246 };
+                byte[] data7 = new byte[8] { 192, 128, 0, 14, 0, 0, 0, 0 };
+                byte[] data8 = new byte[8] { 0, 16, 0, 192, 0, 0, 0, 0 };
+                byte[] data9 = new byte[8] { 0, 0, 51, 0, 0, 0, 0, 0 };
+                byte[] data10 = new byte[8] { 5, 0, 0, 0, 0, 0, 0, 0 };
+                byte[] data11 = new byte[8] { 5, 12, 0, 0, 0, 0, 0, 0 };
+                byte[] data12 = new byte[8] { 135, 104, 4, 100, 192, 255, 0, 0 };
+                byte[] data13 = new byte[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
+                byte[] data14 = new byte[8] { 122, 132, 101, 155, 20, 207, 128, 32 };
+                byte[] data15 = new byte[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
+                byte[] data16 = new byte[8] { 0, 0, 10, 10, 0, 0, 0, 0 };
+
+                Canlib.canWrite(chanHandle, 648, data1, 8, 2);
+                //Canlib.canWrite(chanHandle, 649, data2, 8, 2);
+                //Canlib.canWrite(chanHandle, 650, data3, 4, 2);
+                //Canlib.canWrite(chanHandle, 651, data4, 4, 2);
+                //Canlib.canWrite(chanHandle, 656, data5, 8, 2);
+                //Canlib.canWrite(chanHandle, 657, data6, 8, 2);
+                Canlib.canWrite(chanHandle, 658, data7, 4, 2);
+                Canlib.canWrite(chanHandle, 659, data8, 4, 2);
+                //Canlib.canWrite(chanHandle, 660, data9, 4, 2);
+                Canlib.canWrite(chanHandle, 664, data10, 4, 2);
+                Canlib.canWrite(chanHandle, 665, data11, 2, 2);
+                //Canlib.canWrite(chanHandle, 666, data12, 8, 2);
+                Canlib.canWrite(chanHandle, 667, data13, 0, 2);
+                //Canlib.canWrite(chanHandle, 673, data14, 8, 2);
+                Canlib.canWrite(chanHandle, 675, data15, 1, 2);
+                Canlib.canWrite(chanHandle, 676, data16, 4, 2);
+            }
